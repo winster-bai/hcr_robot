@@ -7,17 +7,15 @@
 [https://docs.ros.org/en/humble/index.html](https://docs.ros.org/en/humble/index.html)   
 
 ## 2.安装Gazebo
-略  
+见ros官网  
 
 ## 3.下载仓库  
-`mkdir ~/dev_ws`
-
-`cd dev_ws`
-
-`git clone https://github.com/winster-bai/ros2_humble_simulation.git`
-
-`colcon build`
-
+```bash
+mkdir ~/dev_ws
+cd dev_ws
+git clone https://github.com/winster-bai/hcr_robot.git
+colcon build
+```
 
 # 节点及功能
 
