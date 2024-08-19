@@ -11,9 +11,13 @@
 
 ## 3.下载仓库  
 `mkdir ~/dev_ws`
+
 `cd dev_ws`
+
 `git clone https://github.com/winster-bai/ros2_humble_simulation.git`
+
 `colcon build`
+
 
 # 节点及功能
 
@@ -45,9 +49,9 @@ ros2 launch hcr_robot load_hcr_camera_laser_into_gazebo.launch.py
 ros2 launch hcr_robot load_hcr_depthcamera_into_gazebo.launch.py
 ```
 
-**需要修改world**，现在用的是开源室内模型
+当前版本测试使用开源室内模型
 
-![图片](image/rviz1.png)
+![图片](image/image.jpg)
 
 ## 4. rviz中显示
 
@@ -69,7 +73,7 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 
 **可以改成手柄或其他，手柄参考youtube代码**
 
-## 6. yolo
+## 6. yolo （暂不支持，文件待整合）
 
 订阅 `camera/image_raw` 并调用yolov8nano，识别精度较低，可能能需按照识别目标针对性定制
 
@@ -77,7 +81,6 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ros2 run yolobot_recognition yolov8_ros2_pt.py
 ```
 
-暂时无法在飞书文档外展示此内容
 
 ## 7. slam_toolbox地图数据发布
 

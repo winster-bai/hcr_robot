@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <robot name="mbot" xmlns:xacro="http://ros.org/wiki/xacro">
-    <xacro:property name="pi" value="3.14159265359"/>
+    <xacro:property name="mpi" value="3.14159265359"/>
     <material name="black">
         <color rgba="0.0 0.0 0.0 1.0"/>
     </material>
@@ -69,7 +69,7 @@
 
     <link name="left_wheel_link">
         <visual>
-            <origin xyz="0 0 0" rpy="${pi/2} 0 0" />
+            <origin xyz="0 0 0" rpy="${mpi/2} 0 0" />
             <geometry>
                 <cylinder radius="0.068" length = "0.024"/>
             </geometry>
@@ -78,7 +78,7 @@
             </material>
         </visual>
         <!-- <collision>
-            <origin xyz="0 0 0" rpy="${pi/2} 0 0" />
+            <origin xyz="0 0 0" rpy="${mpi/2} 0 0" />
             <geometry>
                 <cylinder radius="0.068" length = "0.024"/>
             </geometry>
@@ -94,7 +94,7 @@
 
     <link name="right_wheel_link">
         <visual>
-            <origin xyz="0 0 0" rpy="${pi/2} 0 0" />
+            <origin xyz="0 0 0" rpy="${mpi/2} 0 0" />
             <geometry>
                 <cylinder radius="0.068" length = "0.024"/>
             </geometry>
@@ -103,7 +103,7 @@
             </material>
         </visual>
         <!-- <collision>
-            <origin xyz="0 0 0" rpy="${pi/2} 0 0" />
+            <origin xyz="0 0 0" rpy="${mpi/2} 0 0" />
             <geometry>
                 <cylinder radius="0.068" length = "0.024"/>
             </geometry>
